@@ -2,11 +2,11 @@
 :root {
   /* colores generales */
   --black: #0a1020;
-  --orange: #8a4b00;
+  --orange: #6e3800;
   --orange-on-dark: #ffd58f;
   --white: #ffffff;
   --text-encabezados: #2f3a45;
-  --text-descripcion: #4b5a67;
+  --text-descripcion: #3f4d5a;
   --bg-snow: #f7f8f9;
   --radius-sm: 3px;
   /* tamaños de fuente */
@@ -31,7 +31,7 @@
 
 /* Tipografía */
 body {
-  color: var(--white);
+  color: var(--text-descripcion);
   font-family: "Roboto Condensed", sans-serif;
   line-height: 1.5;
 }
@@ -125,6 +125,54 @@ header .highlight,
 
 .footer .office a {
   color: var(--orange);
+}
+
+/* Explicit color fallbacks so audits do not see white text on light blocks. */
+#hero-section,
+#hero-section h1,
+#hero-section .hero-text,
+#hero-section .discover,
+#stats,
+#stats h2,
+#stats h3,
+#stats p,
+#stats span {
+  color: var(--white);
+}
+
+#services .service-cards article {
+  background-color: var(--white);
+}
+
+#services .service-cards article h3 {
+  color: var(--text-encabezados);
+}
+
+#services .service-cards article p,
+#services .service-cards article a,
+#services .service-cards article span,
+#reviews .reviews-heading p,
+#reviews .review-card p {
+  color: var(--text-descripcion);
+}
+
+#reviews .reviews-heading h2,
+#reviews .review-card .name {
+  color: var(--text-encabezados);
+}
+
+#services .service-cards article.active {
+  background-color: #1f2933;
+}
+
+#services .service-cards article.active h3,
+#services .service-cards article.active p {
+  color: var(--white);
+}
+
+#services .service-cards article.active a,
+#services .service-cards article.active span {
+  color: var(--orange-on-dark);
 }
 
 a:focus-visible,
@@ -1062,7 +1110,7 @@ main {
       border: none;
       padding: 12px 24px;
       border-radius: 30px;
-      background: #7d32ff;
+      background: #4b1fa8;
       color: var(--white);
       font-size: var(--font-size-body);
       font-weight: 600;
