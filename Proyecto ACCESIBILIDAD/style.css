@@ -110,9 +110,11 @@ header .highlight,
 
 .header-topbar a,
 .header-mainbar nav a,
-#services .service-cards a {
+#services .service-cards a,
+.footer a {
   display: inline-flex;
   align-items: center;
+  min-width: 44px;
   min-height: 44px;
 }
 
@@ -173,6 +175,13 @@ header .highlight,
 #services .service-cards article.active a,
 #services .service-cards article.active span {
   color: var(--orange-on-dark);
+}
+
+/* Ensure the section title keeps sufficient contrast in all engines. */
+#services > h2 {
+  display: block !important;
+  margin-bottom: 24px;
+  color: var(--text-encabezados) !important;
 }
 
 a:focus-visible,
@@ -1114,6 +1123,8 @@ main {
       color: var(--white);
       font-size: var(--font-size-body);
       font-weight: 600;
+      min-width: 44px;
+      min-height: 44px;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07);
       cursor: pointer;
     }
@@ -2116,8 +2127,8 @@ main {
       }
 
       .social {
-        width: 30px;
-        height: 30px;
+        width: 44px;
+        height: 44px;
       }
 
       .nav-blocks {
