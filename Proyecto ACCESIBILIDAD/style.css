@@ -184,6 +184,12 @@ header .highlight,
   color: var(--text-encabezados) !important;
 }
 
+/* CTA heading contrast fallback (avoids inherited dark text on dark background). */
+#cta h2,
+#cta h2 strong {
+  color: var(--white) !important;
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible {
