@@ -3,6 +3,7 @@
   /* colores generales */
   --black: #0a1020;
   --orange: #6e3800;
+  --orange-accent: #965100;
   --orange-on-dark: #ffd58f;
   --white: #ffffff;
   --text-encabezados: #2f3a45;
@@ -188,6 +189,26 @@ header .highlight,
 #cta h2,
 #cta h2 strong {
   color: var(--white) !important;
+}
+
+/* Warmer orange accents that keep readable text colors unchanged. */
+.squares .square,
+#reviews .review-card .rating,
+#quality .quality-cards .active .arrow,
+#projects .project-card.active .project-label,
+#projects .project-card.active .project-title,
+#projects .project-card.active .project-link {
+  color: var(--orange-accent) !important;
+}
+
+#reviews .review-dots .dot.active,
+.footer .social,
+#hero-section .discover::after {
+  background-color: var(--orange-accent) !important;
+}
+
+#quality .quality-cards .active {
+  border-bottom-color: var(--orange-accent) !important;
 }
 
 a:focus-visible,
