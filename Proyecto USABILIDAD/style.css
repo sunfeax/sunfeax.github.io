@@ -255,6 +255,21 @@ main {
   justify-content: center;
 }
 
+@supports (content-visibility: auto) {
+  #quality,
+  #stats,
+  #cta,
+  #projects,
+  #partners,
+  #reviews,
+  #faq,
+  #subscribe,
+  .footer {
+    content-visibility: auto;
+    contain-intrinsic-size: 900px;
+  }
+}
+
 /* Header Topbar */
 .header-topbar {
   display: flex;
@@ -364,7 +379,7 @@ main {
   height: 100vh;
 
   /* imágen al fondo */
-  background-image: url('./img/backgrounds/background.png');
+  background-image: url('./img/backgrounds/background.webp');
   background-size: cover;
   background-position: center;
 
@@ -638,7 +653,7 @@ main {
 /* Stats Section */
 #stats {
   width: 100%;
-  background: url(./img/backgrounds/section-bg.png) bottom no-repeat;
+  background: url(./img/backgrounds/section-bg.webp) bottom no-repeat;
   display: flex;
   align-content: center;
   justify-content: center;
