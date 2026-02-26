@@ -1124,8 +1124,9 @@ main {
 
 /* Subscribe Section */
 #subscribe {
-  top: 100px;
   position: relative;
+  z-index: 2;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1186,8 +1187,10 @@ main {
 
 /* Footer */
 .footer {
+  position: relative;
+  z-index: 1;
   background: var(--bg-snow);
-  padding-top: 200px;
+  padding-top: 100px;
   padding-bottom: 20px;
   color: var(--text-descripcion);
   font-size: var(--font-size-body);
@@ -1648,7 +1651,7 @@ main {
   #subscribe {
     width: 90%;
     padding: 40px 30px;
-    top: 60px;
+    margin-top: 60px;
 
     .subscribe-form {
       width: 100%;
@@ -1661,7 +1664,7 @@ main {
 
   /* Footer */
   .footer {
-    padding-top: 160px;
+    padding-top: 100px;
 
     .footer-top {
       flex-wrap: wrap;
@@ -2146,7 +2149,7 @@ main {
   #subscribe {
     width: 92%;
     padding: 36px 20px;
-    top: 40px;
+    margin-top: 40px;
 
     .subscribe-form {
       width: 100%;
@@ -2169,7 +2172,7 @@ main {
 
   /* Footer */
   .footer {
-    padding-top: 110px;
+    padding-top: 70px;
     padding-bottom: 16px;
 
     .footer-top {
