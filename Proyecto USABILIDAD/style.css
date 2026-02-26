@@ -1126,7 +1126,8 @@ main {
 #subscribe {
   position: relative;
   z-index: 2;
-  margin-top: 100px;
+  margin-top: 80px;
+  margin-bottom: -80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1190,7 +1191,7 @@ main {
   position: relative;
   z-index: 1;
   background: var(--bg-snow);
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 20px;
   color: var(--text-descripcion);
   font-size: var(--font-size-body);
@@ -1245,17 +1246,11 @@ main {
       align-items: flex-start;
       justify-content: space-between;
 
-      ul {
-        li {
-          margin-bottom: 15px;
-        }
-      }
-
       .title {
         font-weight: 500;
         font-size: var(--font-size-heading);
         color: #2f3a45;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
       }
 
       a {
