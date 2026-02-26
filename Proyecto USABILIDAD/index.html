@@ -1,548 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preload" as="style" href="./style.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preload" as="image" href="./img/backgrounds/background.webp" fetchpriority="high" />
 
-    <!-- Iconos -->
+  <!-- Iconos -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      media="print"
+      onload="this.media='all'"
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></noscript>
-    <title>Prelude | Home</title>
-  </head>
-  <body>
-    <header>
-      <div class="header-topbar">
-        <ul>
-          <li><a class="icon-link" href="" aria-label="Visit our Facebook page"><i class="icon fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
-          <li><a class="icon-link" href="" aria-label="Visit our Twitter page"><i class="icon fa-brands fa-twitter" aria-hidden="true"></i></a></li>
-          <li><a class="icon-link" href="" aria-label="Visit our Instagram page"><i class="icon fa-brands fa-instagram" aria-hidden="true"></i></a></li>
-          <li><a class="icon-link" href="" aria-label="Visit our LinkedIn page"><i class="icon fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
-        </ul>
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></noscript>
+  <title>Prelude | Home</title>
+    </head>
+    <body>
+  <header>
+   <div class="header-topbar">
+    <ul>
+     <li><a class="icon-link" href="" aria-label="Visit our Facebook page"><i class="icon fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+     <li><a class="icon-link" href="" aria-label="Visit our Twitter page"><i class="icon fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+     <li><a class="icon-link" href="" aria-label="Visit our Instagram page"><i class="icon fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+     <li><a class="icon-link" href="" aria-label="Visit our LinkedIn page"><i class="icon fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+    </ul>
 
-        <ul>
-          <li><a href="">Help Center</a></li>
-          <li><a href="">Docs</a></li>
-          <li><a href=""><span class="highlight">+1 212 946 2700</span></a></li>
-        </ul>
+    <ul>
+     <li><a href="">Help Center</a></li>
+     <li><a href="">Docs</a></li>
+     <li><a href=""><span class="highlight">+1 212 946 2700</span></a></li>
+    </ul>
+   </div>
+
+   <div class="header-mainbar">
+    <a href="/index.html" aria-label="Go to homepage"><img src="./img/logos/logo-white.webp" class="logo" alt="Prelude logo" loading="eager" width="1536" height="643" decoding="async" fetchpriority="high"></a>
+    <nav id="main-menu">
+     <ul>
+      <li>
+       <a href="">Home</a>
+       <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="white" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
+      </li>
+      <li><a href="">About</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">Pricing</a></li>
+      <li><a href="">Products</a></li>
+      <li><a href="">Resources</a></li>
+     </ul>
+    </nav>
+    <div>
+     <a class="icon-link" href="#" aria-label="Open shopping cart">
+      <i class="icon fa-solid fa-bag-shopping" aria-hidden="true"></i>
+     </a>
+     <a class="icon-link" href="#" aria-label="Open search">
+      <i class="icon fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+     </a>
+     <a href="#" class="btn-ghost">Get a Quote</a>
+    </div>
+    <a class="header-burger" href="#main-menu" aria-label="Open main navigation menu">
+     <svg class="icon icon-burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM416 448H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32z"/>
+     </svg>
+    </a>
+   </div>
+  </header>
+
+  <main>
+   <section id="hero-section">
+    <h1>We understand the importance of <span class="highlight"><u>innovation</u></span></h1>
+    <div class="hero-text">
+     Our vision and focus has been to deliver high value projects for our
+     clinets with the emphasis on communication and cost management.
+    </div>
+    <div id="hero-actions">
+     <a href="" class="btn-primary">Learn More</a>
+     <a href="" class="btn-secondary">Our Work</a>
+    </div>
+    <div class="discover">DISCOVER NOW</div>
+   </section>
+
+   <section id="about-block">
+    <div class="about-text">
+     <h2>
+      <span class="highlight">Offering building solutions</span> from start to finish
+     </h2>
+
+     <div class="squares">
+      <i class="square fa-solid fa-square"></i>
+      <i class="square fa-solid fa-square"></i>
+      <i class="square fa-solid fa-square"></i>
+      <i class="square fa-solid fa-square"></i>
+      <i class="square fa-solid fa-square"></i>
+     </div>
+
+     <p>
+      We understand the importance of innovation and professionalism and
+      work with the best people to achieve this. Since our launch in 2007,
+      our vision and focus has been to deliver high value projects for our
+      clients with the emphasis on communication, attention to detail and
+      cost management.
+     </p>
+
+     <a href="#" class="btn-primary">About Us</a>
+    </div>
+
+    <div class="about-video">
+     <img src="./img/backgrounds/video-bg.webp" alt="Construction workers on a building site" loading="lazy" width="570" height="450" decoding="async"> <!-- en futuro será un video en vez img -->
+    </div>
+   </section>
+
+   <section id="services">
+    <h2>Our Services</h2> <!-- encabezado está oculto -->
+    <div class="service-cards">
+     <article>
+      <h3>We Design</h3>
+      <p>Our team takes time to thoroughly understand your project’s specific needs</p>
+      <a href="">Learn More</a>
+      <span>01</span>
+     </article>
+
+     <article class="active">
+      <h3>We Build</h3>
+      <p>Our team takes time to thoroughly understand your project’s specific needs</p>
+      <a href="">Learn More</a>
+      <span>02</span>
+     </article>
+
+     <article>
+      <h3>We Maintain</h3>
+      <p>Our team takes time to thoroughly understand your project’s specific needs</p>
+      <a href="">Learn More</a>
+      <span>03</span>
+     </article>
+    </div>
+   </section>
+
+   <section id="quality">
+    <h2>
+     <span class="highlight">We focused on</span> quality and attention
+    </h2>
+
+    <div class="squares">
+     <i class="square fa-solid fa-square"></i>
+     <i class="square fa-solid fa-square"></i>
+     <i class="square fa-solid fa-square"></i>
+     <i class="square fa-solid fa-square"></i>
+     <i class="square fa-solid fa-square"></i>
+    </div>
+
+    <p class="quality-text">
+     We can service all of your construction needs from foundations to framing,
+     siding, roof and window installation, floors and finishing.
+    </p>
+
+    <div class="quality-cards">
+     <article>
+      <div class="img-box">
+       <img src="./img/quality/quality-section1.webp" alt="Technician performing maintenance and repairs" loading="lazy" width="1920" height="1280" decoding="async">
       </div>
 
-      <div class="header-mainbar">
-        <a href="/index.html" aria-label="Go to homepage"><img src="./img/logos/logo-white.webp" class="logo" alt="Prelude logo" loading="eager"/></a>
-        <nav id="main-menu">
-          <ul>
-            <li>
-              <a href="">Home</a>
-              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="white" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
-            </li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">Resources</a></li>
-          </ul>
-        </nav>
-        <div>
-          <a class="icon-link" href="#" aria-label="Open shopping cart">
-            <i class="icon fa-solid fa-bag-shopping" aria-hidden="true"></i>
-          </a>
-          <a class="icon-link" href="#" aria-label="Open search">
-            <i class="icon fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-          </a>
-          <a href="#" class="btn-ghost">Get a Quote</a>
-        </div>
-        <a class="header-burger" href="#main-menu" aria-label="Open main navigation menu">
-          <svg class="icon icon-burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true" focusable="false">
-            <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM416 448H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32z"/>
-          </svg>
-        </a>
+      <h3>Maintenance & Repairs</h3>
+      <p>
+       We operate with the confidence that our past has prepared us to embrace
+       the most challenging of projects
+      </p>
+      <a class="arrow" href="#" aria-label="Learn more about maintenance and repairs">
+       <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+      </a>
+     </article>
+
+     <article class="active">
+      <div class="img-box">
+       <img src="./img/quality/quality-section2.webp" alt="Building construction project in progress" loading="lazy" width="1200" height="630" decoding="async">
       </div>
-    </header>
 
-    <main>
-      <section id="hero-section">
-        <h1>We understand the importance of <span class="highlight"><u>innovation</u></span></h1>
-        <div class="hero-text">
-          Our vision and focus has been to deliver high value projects for our
-          clinets with the emphasis on communication and cost management.
+      <h3>Building Construction</h3>
+      <p>
+       We operate with the confidence that our past has prepared us to embrace
+       the most challenging of projects
+      </p>
+      <a class="arrow" href="#" aria-label="Learn more about building construction">
+       <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+      </a>
+     </article>
+
+     <article>
+      <div class="img-box">
+       <img src="./img/quality/quality-section3.webp" alt="Civil engineering team at a construction site" loading="lazy" width="1280" height="698" decoding="async">
+      </div>
+
+      <h3>Civil Engineering</h3>
+      <p>
+       We operate with the confidence that our past has prepared us to embrace
+       the most challenging of projects
+      </p>
+      <a class="arrow" href="#" aria-label="Learn more about civil engineering">
+       <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+      </a>
+     </article>
+    </div>
+
+    <a href="#" class="btn-primary">Our Services</a>
+   </section>
+
+   <section id="stats">
+    <h2>Our achievements</h2>
+    <article class="stat">
+     <div class="stat-head">
+      <h3 class="stat-title">Designed buildings</h3>
+      <span class="stat-number">1.5k</span>
+      <img class="stat-icon" src="./img/stats/stats-construction-icon.png" alt="Construction icon representing designed buildings" loading="lazy" width="300" height="240" decoding="async">
+     </div>
+     <p class="stat-text">
+      Our company was founded on the principles of honest work and quality workmanship
+     </p>
+    </article>
+
+    <article class="stat">
+     <div class="stat-head">
+      <h3 class="stat-title">Completed projects</h3>
+      <span class="stat-number">120+</span>
+      <img class="stat-icon" src="./img/stats/stats-interior-design.png" alt="Interior design icon representing completed projects" loading="lazy" width="300" height="240" decoding="async">
+     </div>
+     <p class="stat-text">
+      Our company was founded on the principles of honest work and quality workmanship
+     </p>
+    </article>
+
+    <article class="stat">
+     <div class="stat-head">
+      <h3 class="stat-title">Happy clients</h3>
+      <span class="stat-number">1.2k</span>
+      <img class="stat-icon" src="./img/stats/stats-architecture-icon.png" alt="Architecture icon representing happy clients" loading="lazy" width="300" height="240" decoding="async">
+     </div>
+     <p class="stat-text">
+      Our company was founded on the principles of honest work and quality workmanship
+     </p>
+    </article>
+   </section>
+   
+   <section id="cta">
+    <h2><strong>Let's get started</strong> your project with professional way</h2>
+    <a href="#" class="cta-btn">Get a Quote</a>
+   </section>
+
+   <section id="projects">
+    <div class="projects-header">
+     <div>
+      <h2>We pride ourselves on aiming <span class="highlight">perfection in every project</span></h2>
+      <div class="squares">
+       <i class="square fa-solid fa-square"></i>
+       <i class="square fa-solid fa-square"></i>
+       <i class="square fa-solid fa-square"></i>
+       <i class="square fa-solid fa-square"></i>
+       <i class="square fa-solid fa-square"></i>
+      </div>
+     </div>
+     <a href="#" class="btn-hollow">View All</a>
+    </div>
+    
+    <!-- Carrusel horizontal de proyectos recortado por el wrapper -->
+    <div class="project-cards-wrapper">
+     <div class="project-cards">
+      <article class="project-card">
+       <div class="project-image">
+        <img src="./img/projects/projects-section1.webp" alt="Exterior of a modern construction project" loading="lazy" width="612" height="472" decoding="async">
+        <div class="project-label">
+         <h3 class="project-title">New Construction Project</h3>
+         <a class="project-link" href="#" aria-label="View details for new construction project one">
+          <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+         </a>
         </div>
-        <div id="hero-actions">
-          <a href="" class="btn-primary">Learn More</a>
-          <a href="" class="btn-secondary">Our Work</a>
+       </div>
+      </article>
+ 
+      <article class="project-card active">
+       <div class="project-image">
+        <img src="./img/projects/projects-section2.webp" alt="Construction site with cranes and new structures" loading="lazy" width="650" height="433" decoding="async">
+        <div class="project-label">
+         <h3 class="project-title">New Construction Project</h3>
+         <a class="project-link" href="#" aria-label="View details for new construction project two">
+          <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+         </a>
         </div>
-        <div class="discover">DISCOVER NOW</div>
-      </section>
-
-      <section id="about-block">
-        <div class="about-text">
-          <h2>
-            <span class="highlight">Offering building solutions</span> from start to finish
-          </h2>
-
-          <div class="squares">
-            <i class="square fa-solid fa-square"></i>
-            <i class="square fa-solid fa-square"></i>
-            <i class="square fa-solid fa-square"></i>
-            <i class="square fa-solid fa-square"></i>
-            <i class="square fa-solid fa-square"></i>
-          </div>
-
-          <p>
-            We understand the importance of innovation and professionalism and
-            work with the best people to achieve this. Since our launch in 2007,
-            our vision and focus has been to deliver high value projects for our
-            clients with the emphasis on communication, attention to detail and
-            cost management.
-          </p>
-
-          <a href="#" class="btn-primary">About Us</a>
-        </div>
-
-        <div class="about-video">
-          <img src="./img/backgrounds/video-bg.webp" alt="Construction workers on a building site" loading="lazy" /> <!-- en futuro será un video en vez img -->
-        </div>
-      </section>
-
-      <section id="services">
-        <h2>Our Services</h2> <!-- encabezado está oculto -->
-        <div class="service-cards">
-          <article>
-            <h3>We Design</h3>
-            <p>Our team takes time to thoroughly understand your project’s specific needs</p>
-            <a href="">Learn More</a>
-            <span>01</span>
-          </article>
-
-          <article class="active">
-            <h3>We Build</h3>
-            <p>Our team takes time to thoroughly understand your project’s specific needs</p>
-            <a href="">Learn More</a>
-            <span>02</span>
-          </article>
-
-          <article>
-            <h3>We Maintain</h3>
-            <p>Our team takes time to thoroughly understand your project’s specific needs</p>
-            <a href="">Learn More</a>
-            <span>03</span>
-          </article>
-        </div>
-      </section>
-
-      <section id="quality">
-        <h2>
-          <span class="highlight">We focused on</span> quality and attention
-        </h2>
-
-        <div class="squares">
-          <i class="square fa-solid fa-square"></i>
-          <i class="square fa-solid fa-square"></i>
-          <i class="square fa-solid fa-square"></i>
-          <i class="square fa-solid fa-square"></i>
-          <i class="square fa-solid fa-square"></i>
-        </div>
-
-        <p class="quality-text">
-          We can service all of your construction needs from foundations to framing,
-          siding, roof and window installation, floors and finishing.
-        </p>
-
-        <div class="quality-cards">
-          <article>
-            <div class="img-box">
-              <img src="./img/quality/quality-section1.webp" alt="Technician performing maintenance and repairs" loading="lazy" />
-            </div>
-
-            <h3>Maintenance & Repairs</h3>
-            <p>
-              We operate with the confidence that our past has prepared us to embrace
-              the most challenging of projects
-            </p>
-            <a class="arrow" href="#" aria-label="Learn more about maintenance and repairs">
-              <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
-            </a>
-          </article>
-
-          <article class="active">
-            <div class="img-box">
-              <img src="./img/quality/quality-section2.webp" alt="Building construction project in progress" loading="lazy" />
-            </div>
-
-            <h3>Building Construction</h3>
-            <p>
-              We operate with the confidence that our past has prepared us to embrace
-              the most challenging of projects
-            </p>
-            <a class="arrow" href="#" aria-label="Learn more about building construction">
-              <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
-            </a>
-          </article>
-
-          <article>
-            <div class="img-box">
-              <img src="./img/quality/quality-section3.webp" alt="Civil engineering team at a construction site" loading="lazy" />
-            </div>
-
-            <h3>Civil Engineering</h3>
-            <p>
-              We operate with the confidence that our past has prepared us to embrace
-              the most challenging of projects
-            </p>
-            <a class="arrow" href="#" aria-label="Learn more about civil engineering">
-              <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
-            </a>
-          </article>
-        </div>
-
-        <a href="#" class="btn-primary">Our Services</a>
-      </section>
-
-      <section id="stats">
-        <h2>Our achievements</h2>
-        <article class="stat">
-          <div class="stat-head">
-            <h3 class="stat-title">Designed buildings</h3>
-            <span class="stat-number">1.5k</span>
-            <img class="stat-icon" src="./img/stats/stats-construction-icon.png" alt="Construction icon representing designed buildings" loading="lazy">
-          </div>
-          <p class="stat-text">
-            Our company was founded on the principles of honest work and quality workmanship
-          </p>
-        </article>
-
-        <article class="stat">
-          <div class="stat-head">
-            <h3 class="stat-title">Completed projects</h3>
-            <span class="stat-number">120+</span>
-            <img class="stat-icon" src="./img/stats/stats-interior-design.png" alt="Interior design icon representing completed projects" loading="lazy">
-          </div>
-          <p class="stat-text">
-            Our company was founded on the principles of honest work and quality workmanship
-          </p>
-        </article>
-
-        <article class="stat">
-          <div class="stat-head">
-            <h3 class="stat-title">Happy clients</h3>
-            <span class="stat-number">1.2k</span>
-            <img class="stat-icon" src="./img/stats/stats-architecture-icon.png" alt="Architecture icon representing happy clients" loading="lazy">
-          </div>
-          <p class="stat-text">
-            Our company was founded on the principles of honest work and quality workmanship
-          </p>
-        </article>
-      </section>
+       </div>
+      </article>
       
-      <section id="cta">
-        <h2><strong>Let's get started</strong> your project with professional way</h2>
-        <a href="#" class="cta-btn">Get a Quote</a>
-      </section>
-
-      <section id="projects">
-        <div class="projects-header">
-          <div>
-            <h2>We pride ourselves on aiming <span class="highlight">perfection in every project</span></h2>
-            <div class="squares">
-              <i class="square fa-solid fa-square"></i>
-              <i class="square fa-solid fa-square"></i>
-              <i class="square fa-solid fa-square"></i>
-              <i class="square fa-solid fa-square"></i>
-              <i class="square fa-solid fa-square"></i>
-            </div>
-          </div>
-          <a href="#" class="btn-hollow">View All</a>
+      <article class="project-card">
+       <div class="project-image">
+        <img src="./img/projects/projects-section3.webp" alt="Residential construction development" loading="lazy" width="1280" height="720" decoding="async">
+        <div class="project-label">
+         <h3 class="project-title">New Construction Project</h3>
+         <a class="project-link" href="#" aria-label="View details for new construction project three">
+          <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+         </a>
         </div>
-        
-        <!-- Carrusel horizontal de proyectos recortado por el wrapper -->
-        <div class="project-cards-wrapper">
-          <div class="project-cards">
-            <article class="project-card">
-              <div class="project-image">
-                <img src="./img/projects/projects-section1.webp" alt="Exterior of a modern construction project" loading="lazy" />
-                <div class="project-label">
-                  <h3 class="project-title">New Construction Project</h3>
-                  <a class="project-link" href="#" aria-label="View details for new construction project one">
-                    <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-            </article>
-  
-            <article class="project-card active">
-              <div class="project-image">
-                <img src="./img/projects/projects-section2.webp" alt="Construction site with cranes and new structures" loading="lazy" />
-                <div class="project-label">
-                  <h3 class="project-title">New Construction Project</h3>
-                  <a class="project-link" href="#" aria-label="View details for new construction project two">
-                    <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-            </article>
-            
-            <article class="project-card">
-              <div class="project-image">
-                <img src="./img/projects/projects-section3.webp" alt="Residential construction development" loading="lazy" />
-                <div class="project-label">
-                  <h3 class="project-title">New Construction Project</h3>
-                  <a class="project-link" href="#" aria-label="View details for new construction project three">
-                    <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-            </article>
-  
-            <article class="project-card">
-              <div class="project-image">
-                <img src="./img/projects/projects-section4.jpeg" alt="Completed urban construction complex" loading="lazy" />
-                <div class="project-label">
-                  <h3 class="project-title">New Construction Project</h3>
-                  <a class="project-link" href="#" aria-label="View details for new construction project four">
-                    <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
+       </div>
+      </article>
+ 
+      <article class="project-card">
+       <div class="project-image">
+        <img src="./img/projects/projects-section4.jpeg" alt="Completed urban construction complex" loading="lazy" width="750" height="750" decoding="async">
+        <div class="project-label">
+         <h3 class="project-title">New Construction Project</h3>
+         <a class="project-link" href="#" aria-label="View details for new construction project four">
+          <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+         </a>
         </div>
-      </section>
+       </div>
+      </article>
+     </div>
+    </div>
+   </section>
 
-      <section id="partners">
-        <h2>Our partners</h2>
-        <ul class="partner-logos">
-          <li><img src="./img/partners/partner1.png" alt="Techcom logo" loading="lazy"></li>
-          <li><img src="./img/partners/partner2.png" alt="One Side logo" loading="lazy"></li>
-          <li><img src="./img/partners/partner3.png" alt="The Found logo" loading="lazy"></li>
-          <li><img src="./img/partners/partner4.png" alt="Judson Freeman logo" loading="lazy"></li>
-          <li><img src="./img/partners/partner5.png" alt="The Arc logo" loading="lazy"></li>
-          <li><img src="./img/partners/partner6.png" alt="Prelude logo" loading="lazy"></li>
-        </ul>
-      </section>
+   <section id="partners">
+    <h2>Our partners</h2>
+    <ul class="partner-logos">
+     <li><img src="./img/partners/partner1.png" alt="Techcom logo" loading="lazy" width="179" height="115" decoding="async"></li>
+     <li><img src="./img/partners/partner2.png" alt="One Side logo" loading="lazy" width="151" height="115" decoding="async"></li>
+     <li><img src="./img/partners/partner3.png" alt="The Found logo" loading="lazy" width="143" height="115" decoding="async"></li>
+     <li><img src="./img/partners/partner4.png" alt="Judson Freeman logo" loading="lazy" width="201" height="115" decoding="async"></li>
+     <li><img src="./img/partners/partner5.png" alt="The Arc logo" loading="lazy" width="165" height="115" decoding="async"></li>
+     <li><img src="./img/partners/partner6.png" alt="Prelude logo" loading="lazy" width="160" height="115" decoding="async"></li>
+    </ul>
+   </section>
 
-      <section id="reviews">
-        <div class="reviews-heading">
-          <h2>Trusted by more than <span class="highlight">2,000 clients</span></h2>
-          <div class="squares">
-            <i class="square fa-solid fa-square"></i>
-            <i class="square fa-solid fa-square"></i>
-            <i class="square fa-solid fa-square"></i>
-            <i class="square fa-solid fa-square"></i>
-            <i class="square fa-solid fa-square"></i>
-          </div>
-          <p>The construction of a building involves many people: Architects, Designers, Engineers, Contractors, Sub-Contractors all working together to meet the needs of the client.</p>
+   <section id="reviews">
+    <div class="reviews-heading">
+     <h2>Trusted by more than <span class="highlight">2,000 clients</span></h2>
+     <div class="squares">
+      <i class="square fa-solid fa-square"></i>
+      <i class="square fa-solid fa-square"></i>
+      <i class="square fa-solid fa-square"></i>
+      <i class="square fa-solid fa-square"></i>
+      <i class="square fa-solid fa-square"></i>
+     </div>
+     <p>The construction of a building involves many people: Architects, Designers, Engineers, Contractors, Sub-Contractors all working together to meet the needs of the client.</p>
+    </div>
+
+    <!-- Tarjetas duplicadas en grilla flexible para simular navegación por testimonios -->
+    <div class="review-cards">
+     <article class="review-card faded">
+      <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+      <p>We have done five major commercial projects with Prelude and they represent what it best in a general contractor, incuding special attention to the plan design and the constant attention to the job.</p>
+      <footer class="reviewer">
+       <div class="avatar-box">
+        <img src="./img/reviews/avatar1.webp" alt="Vincent Smith portrait" loading="lazy" width="392" height="392" decoding="async">
+       </div>
+       <div class="review-meta">
+        <h3 class="name">Vincent Smith</h3>
+        <div class="rating">
+         <i class="star fa-solid fa-star" aria-hidden="true"></i>
+         <i class="star fa-solid fa-star" aria-hidden="true"></i>
+         <i class="star fa-solid fa-star" aria-hidden="true"></i>
+         <i class="star fa-solid fa-star" aria-hidden="true"></i>
+         <i class="star fa-solid fa-star" aria-hidden="true"></i>
         </div>
+       </div>
+      </footer>
+     </article>
 
-        <!-- Tarjetas duplicadas en grilla flexible para simular navegación por testimonios -->
-        <div class="review-cards">
-          <article class="review-card faded">
-            <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
-            <p>We have done five major commercial projects with Prelude and they represent what it best in a general contractor, incuding special attention to the plan design and the constant attention to the job.</p>
-            <footer class="reviewer">
-              <div class="avatar-box">
-                <img src="./img/reviews/avatar1.webp" alt="Vincent Smith portrait" loading="lazy">
-              </div>
-              <div class="review-meta">
-                <h3 class="name">Vincent Smith</h3>
-                <div class="rating">
-                  <i class="star fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="star fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="star fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="star fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="star fa-solid fa-star" aria-hidden="true"></i>
-                </div>
-              </div>
-            </footer>
-          </article>
-
-          <article class="review-card faded">
-            <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
-            <p>We have done five major commercial projects with Prelude and they represent what it best in a general contractor, incuding special attention to the plan design and the constant attention to the job.</p>
-            <footer class="reviewer">
-              <div class="avatar-box">
-                <img src="./img/reviews/avatar2.webp" alt="Thomas Smith portrait" loading="lazy">
-              </div>
-              <div class="review-meta">
-                <h3 class="name">Thomas Smith</h3>
-                <div class="rating">
-                  <i class="star fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="star fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="star fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="star fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="star fa-solid fa-star" aria-hidden="true"></i>
-                </div>
-              </div>
-            </footer>
-          </article>
-
-          <article class="review-card faded">
-            <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
-            <p>We have done five major commercial projects with Prelude and they represent what it best in a general contractor, incuding special attention to the plan design and the constant attention to the job.</p>
-            <footer class="reviewer">
-              <div class="avatar-box">
-                <img src="./img/reviews/avatar3.webp" alt="Ernest Smith portrait" loading="lazy">
-              </div>
-              <div class="review-meta">
-                <h3 class="name">Ernest Smith</h3>
-                <div class="rating">
-                  <i class="star fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="star fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="star fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="star fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="star fa-solid fa-star" aria-hidden="true"></i>
-                </div>
-              </div>
-            </footer>
-          </article>
-
-          <article class="review-card faded">
-            <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
-            <p>We have done five major commercial projects with Prelude and they represent what it best in a general contractor, incuding special attention to the plan design and the constant attention to the job.</p>
-            <footer class="reviewer">
-              <div class="avatar-box">
-                <img src="./img/reviews/avatar4.webp" alt="Andrea Smith portrait" loading="lazy">
-              </div>
-              <div class="review-meta">
-                <p class="name">Andrea Smith</p>
-                <div class="rating">
-                  <i class="star fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="star fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="star fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="star fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="star fa-solid fa-star" aria-hidden="true"></i>
-                </div>
-              </div>
-            </footer>
-          </article>
+     <article class="review-card faded">
+      <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+      <p>We have done five major commercial projects with Prelude and they represent what it best in a general contractor, incuding special attention to the plan design and the constant attention to the job.</p>
+      <footer class="reviewer">
+       <div class="avatar-box">
+        <img src="./img/reviews/avatar2.webp" alt="Thomas Smith portrait" loading="lazy" width="248" height="255" decoding="async">
+       </div>
+       <div class="review-meta">
+        <h3 class="name">Thomas Smith</h3>
+        <div class="rating">
+         <i class="star fa-solid fa-star" aria-hidden="true"></i>
+         <i class="star fa-solid fa-star" aria-hidden="true"></i>
+         <i class="star fa-solid fa-star" aria-hidden="true"></i>
+         <i class="star fa-solid fa-star" aria-hidden="true"></i>
+         <i class="star fa-solid fa-star" aria-hidden="true"></i>
         </div>
+       </div>
+      </footer>
+     </article>
 
-        <a href="#" class="btn-primary reviews-cta">Read more</a>
-      </section>
-
-      <section id="faq">
-        <div class="faq-image">
-          <img src="./img/faq/faq-section.webp" alt="Construction worker standing at the building site" loading="lazy" />
+     <article class="review-card faded">
+      <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+      <p>We have done five major commercial projects with Prelude and they represent what it best in a general contractor, incuding special attention to the plan design and the constant attention to the job.</p>
+      <footer class="reviewer">
+       <div class="avatar-box">
+        <img src="./img/reviews/avatar3.webp" alt="Ernest Smith portrait" loading="lazy" width="226" height="214" decoding="async">
+       </div>
+       <div class="review-meta">
+        <h3 class="name">Ernest Smith</h3>
+        <div class="rating">
+         <i class="star fa-solid fa-star" aria-hidden="true"></i>
+         <i class="star fa-solid fa-star" aria-hidden="true"></i>
+         <i class="star fa-solid fa-star" aria-hidden="true"></i>
+         <i class="star fa-solid fa-star" aria-hidden="true"></i>
+         <i class="star fa-solid fa-star" aria-hidden="true"></i>
         </div>
+       </div>
+      </footer>
+     </article>
 
-        <!-- Bloque de preguntas preparado para comportarse como acordeón -->
-        <div class="faq-content">
-          <h2>Building and Construction — FAQs</h2>
-          <div class="faq-list">
-            <article class="faq-item">
-              <div class="question">
-                <button class="toggle-btn" type="button" aria-label="Expand answer" aria-expanded="false">
-                  <i class="fa-solid fa-plus" aria-hidden="true"></i>
-                </button>
-                <h3 class="question-title">What size construction project can Prelude manage?</h3>
-              </div>
-            </article>
-
-            <article class="faq-item active">
-              <div class="question">
-                <button class="toggle-btn" type="button" aria-label="Collapse answer" aria-expanded="true">
-                  <i class="fa-solid fa-minus" aria-hidden="true"></i>
-                </button>
-                <h3 class="question-title">How do you determine the final cost of the project?</h3>
-              </div>
-              <p class="answer">First we work with every customer in order to clearly define the project, based on their priorities and unique needs. A detailed and customized estimate is developed, which gives you the accurate project cost.</p>
-            </article>
-
-            <article class="faq-item">
-              <div class="question">
-                <button class="toggle-btn" type="button" aria-label="Expand answer" aria-expanded="false">
-                  <i class="fa-solid fa-plus" aria-hidden="true"></i>
-                </button>
-                <h3 class="question-title">Why should I purchase a home instead of renting?</h3>
-              </div>
-            </article>
-          </div>
+     <article class="review-card faded">
+      <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+      <p>We have done five major commercial projects with Prelude and they represent what it best in a general contractor, incuding special attention to the plan design and the constant attention to the job.</p>
+      <footer class="reviewer">
+       <div class="avatar-box">
+        <img src="./img/reviews/avatar4.webp" alt="Andrea Smith portrait" loading="lazy" width="306" height="308" decoding="async">
+       </div>
+       <div class="review-meta">
+        <p class="name">Andrea Smith</p>
+        <div class="rating">
+         <i class="star fa-solid fa-star" aria-hidden="true"></i>
+         <i class="star fa-solid fa-star" aria-hidden="true"></i>
+         <i class="star fa-solid fa-star" aria-hidden="true"></i>
+         <i class="star fa-solid fa-star" aria-hidden="true"></i>
+         <i class="star fa-solid fa-star" aria-hidden="true"></i>
         </div>
-      </section>
+       </div>
+      </footer>
+     </article>
+    </div>
 
-      <!-- Formulario con botón superpuesto al campo de correo -->
-      <section id="subscribe">
-        <h2>Subscribe to get the latest news</h2>
-        <p>By clicking subscribe, you are opting in to receive our updates</p>
-        <form class="subscribe-form">
-          <label class="sr-only" for="subscribe-email">Email address</label>
-          <input id="subscribe-email" type="email" placeholder="Your email address" autocomplete="email" required />
-          <button type="submit">Subscribe</button>
-        </form>
-      </section>
+    <a href="#" class="btn-primary reviews-cta">Read more</a>
+   </section>
 
-    </main>
+   <section id="faq">
+    <div class="faq-image">
+     <img src="./img/faq/faq-section.webp" alt="Construction worker standing at the building site" loading="lazy" width="1920" height="1080" decoding="async">
+    </div>
 
-    <footer class="footer">
-      <div class="footer-top">
-        <div class="brand">
-          <a href="#" aria-label="Go to Prelude homepage">
-            <img src="./img/logos/logo-black.webp" class="logo" alt="Prelude logo" loading="lazy" />
-          </a>
-          <p>We offer framing, siding, roof and window installation, floors, finishing and more.</p>
-          <div class="socials">
-            <a href="#" class="social" aria-label="Visit our Facebook page">
-              <i class="icon fa-brands fa-facebook-f" aria-hidden="true"></i>
-            </a>
-            <a href="#" class="social" aria-label="Visit our Twitter page">
-              <i class="icon fa-brands fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="#" class="social" aria-label="Visit our Instagram page">
-              <i class="icon fa-brands fa-instagram" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
+    <!-- Bloque de preguntas preparado para comportarse como acordeón -->
+    <div class="faq-content">
+     <h2>Building and Construction — FAQs</h2>
+     <div class="faq-list">
+      <article class="faq-item">
+       <div class="question">
+        <button class="toggle-btn" type="button" aria-label="Expand answer" aria-expanded="false">
+         <i class="fa-solid fa-plus" aria-hidden="true"></i>
+        </button>
+        <h3 class="question-title">What size construction project can Prelude manage?</h3>
+       </div>
+      </article>
 
-        <nav class="nav-blocks">
-          <ul>
-            <li class="title">About</li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
+      <article class="faq-item active">
+       <div class="question">
+        <button class="toggle-btn" type="button" aria-label="Collapse answer" aria-expanded="true">
+         <i class="fa-solid fa-minus" aria-hidden="true"></i>
+        </button>
+        <h3 class="question-title">How do you determine the final cost of the project?</h3>
+       </div>
+       <p class="answer">First we work with every customer in order to clearly define the project, based on their priorities and unique needs. A detailed and customized estimate is developed, which gives you the accurate project cost.</p>
+      </article>
 
-          <ul>
-            <li class="title">Products</li>
-            <li><a href="#">Platform</a></li>
-            <li><a href="#">Customers</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Pricing</a></li>
-          </ul>
+      <article class="faq-item">
+       <div class="question">
+        <button class="toggle-btn" type="button" aria-label="Expand answer" aria-expanded="false">
+         <i class="fa-solid fa-plus" aria-hidden="true"></i>
+        </button>
+        <h3 class="question-title">Why should I purchase a home instead of renting?</h3>
+       </div>
+      </article>
+     </div>
+    </div>
+   </section>
 
-          <ul>
-            <li class="title">Resources</li>
-            <li><a href="#">Training</a></li>
-            <li><a href="#">Marketplace</a></li>
-            <li><a href="#">Experts</a></li>
-            <li><a href="#">Guides</a></li>
-          </ul>
+   <!-- Formulario con botón superpuesto al campo de correo -->
+   <section id="subscribe">
+    <h2>Subscribe to get the latest news</h2>
+    <p>By clicking subscribe, you are opting in to receive our updates</p>
+    <form class="subscribe-form">
+     <label class="sr-only" for="subscribe-email">Email address</label>
+     <input id="subscribe-email" type="email" placeholder="Your email address" autocomplete="email" required />
+     <button type="submit">Subscribe</button>
+    </form>
+   </section>
 
-          <section class="office">
-            <h3 class="title">Offices</h3>
-            <address>
-              New York. 112 W 34th St, Manhattan. USA. <br />
-              <a href="tel:+12129462707">(1) 212-946-2707</a>
-            </address>
-          </section>
+  </main>
 
-        </nav>
-      </div>
+  <footer class="footer">
+   <div class="footer-top">
+    <div class="brand">
+     <a href="#" aria-label="Go to Prelude homepage">
+      <img src="./img/logos/logo-black.webp" class="logo" alt="Prelude logo" loading="lazy" width="1131" height="440" decoding="async">
+     </a>
+     <p>We offer framing, siding, roof and window installation, floors, finishing and more.</p>
+     <div class="socials">
+      <a href="#" class="social" aria-label="Visit our Facebook page">
+       <i class="icon fa-brands fa-facebook-f" aria-hidden="true"></i>
+      </a>
+      <a href="#" class="social" aria-label="Visit our Twitter page">
+       <i class="icon fa-brands fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a href="#" class="social" aria-label="Visit our Instagram page">
+       <i class="icon fa-brands fa-instagram" aria-hidden="true"></i>
+      </a>
+     </div>
+    </div>
 
-      <div class="footer-bottom">
-        <hr />
-        <div class="bottom-row">
-          <p>©2019 Prelude by Viworx-Co. All Rights Reserved.</p>
-          <div class="links">
-            <a href="#">Terms of use</a>
-            <a href="#">Privacy policy</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+    <nav class="nav-blocks">
+     <ul>
+      <li class="title">About</li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blog</a></li>
+     </ul>
+
+     <ul>
+      <li class="title">Products</li>
+      <li><a href="#">Platform</a></li>
+      <li><a href="#">Customers</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Pricing</a></li>
+     </ul>
+
+     <ul>
+      <li class="title">Resources</li>
+      <li><a href="#">Training</a></li>
+      <li><a href="#">Marketplace</a></li>
+      <li><a href="#">Experts</a></li>
+      <li><a href="#">Guides</a></li>
+     </ul>
+
+     <section class="office">
+      <h3 class="title">Offices</h3>
+      <address>
+       New York. 112 W 34th St, Manhattan. USA. <br />
+       <a href="tel:+12129462707">(1) 212-946-2707</a>
+      </address>
+     </section>
+
+    </nav>
+   </div>
+
+   <div class="footer-bottom">
+    <hr />
+    <div class="bottom-row">
+     <p>©2019 Prelude by Viworx-Co. All Rights Reserved.</p>
+     <div class="links">
+      <a href="#">Terms of use</a>
+      <a href="#">Privacy policy</a>
+     </div>
+    </div>
+   </div>
+  </footer>
+    </body>
 </html>
