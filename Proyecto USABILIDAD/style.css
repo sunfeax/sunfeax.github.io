@@ -33,16 +33,15 @@
 /* Tipografía */
 body {
   color: var(--text-descripcion);
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-family: "Bahnschrift SemiCondensed", "Bahnschrift", "Arial Narrow", Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0.012em;
+  font-weight: 400;
 }
 
 p {
   line-height: 1.6;
   font-weight: 500;
-  letter-spacing: 0.015em;
+  letter-spacing: 0.004em;
 }
 
 a,
@@ -182,13 +181,6 @@ header .highlight,
 #services .service-cards article.active a,
 #services .service-cards article.active span {
   color: var(--orange-on-dark);
-}
-
-/* Ensure the section title keeps sufficient contrast in all engines. */
-#services > h2 {
-  display: block !important;
-  margin-bottom: 24px;
-  color: var(--text-encabezados) !important;
 }
 
 /* CTA heading contrast fallback (avoids inherited dark text on dark background). */
@@ -578,7 +570,7 @@ main {
 
     article {
       width: 300px;
-      height: 350px;
+      height: 370px;
       background: var(--white);
       border-radius: var(--radius-sm);
       box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.07);
@@ -614,7 +606,7 @@ main {
     p {
       font-size: var(--font-size-body);
       color: var(--text-descripcion);
-      margin: 0 72px 25px 20px;
+      margin: 0 64px 34px 20px;
       flex-grow: 1;
     }
 
